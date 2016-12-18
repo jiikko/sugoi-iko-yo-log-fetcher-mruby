@@ -85,10 +85,14 @@ module SugoiIkoYoLogFetcherMruby
 
     def local_path(date_to_s, index)
       file_path = "logs/app/#{date_to_s}_#{index}.gz"
+      mkdir_by(file_path)
+      file_path
+    end
+
+    def mkdir_by(file_path)
       dir_path = file_path.split('/')
       dir_path.pop
       FileUtilsSimple.mkdir_p(File.join(dir_path))
-      file_path
     end
 
     def s3_path(date_to_s, index)
