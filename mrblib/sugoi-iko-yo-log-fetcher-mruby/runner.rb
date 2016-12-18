@@ -69,7 +69,7 @@ module SugoiIkoYoLogFetcherMruby
       30.times do |index| # 30個以上1日のログが分割されないでしょ
         current_s3_path = s3_path(date_to_s, index)
         puts current_s3_path
-        res = s3.download(current_s3_path)
+        res = s3.download(current_s3_path) # bloking and hungup!!! why!?
         puts 'complate'
         if res.status.to_i == 200
           puts "downloaded #{current_s3_path}"
