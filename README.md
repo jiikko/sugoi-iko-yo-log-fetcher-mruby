@@ -7,8 +7,7 @@
 TODO
 
 ## Usage
-
-認証情報は ~/.ai_s3log に用意します
+認証情報は `~/.ai_s3log` に用意します
 
 ```shell
 $ cat ~/.ai_s3log

@@ -1,7 +1,12 @@
 def gem_config(conf)
-  #conf.gembox 'default'
+  # conf.gembox 'default'
+  conf.gem :github => 'iij/mruby-io'
+  conf.gem :core => "mruby-bin-mirb"
 
-  # be sure to include this gem (the cli app)
+  # for mruby-aws-s3
+  conf.gem :git => 'https://github.com/jiikko/mruby-aws-s3', :branch => 'master'
+  conf.gem :git => 'https://github.com/luisbebop/mruby-polarssl', :branch => 'master'
+
   conf.gem File.expand_path(File.dirname(__FILE__))
 end
 
