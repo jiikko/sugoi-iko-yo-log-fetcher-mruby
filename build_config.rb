@@ -6,6 +6,8 @@ def gem_config(conf)
   # for mruby-aws-s3
   conf.gem :git => 'https://github.com/jiikko/mruby-aws-s3', :branch => 'master'
   conf.gem :git => 'https://github.com/luisbebop/mruby-polarssl', :branch => 'master'
+  # http://qiita.com/takahashim/items/d283a093f8d95df59703#fileutilsrbpprb%E7%AD%89%E3%81%8C%E3%81%AA%E3%81%84
+  conf.gem :git => 'https://github.com/gromnitsky/mruby-fileutils-simple', :branch => 'master'
 
   conf.gem File.expand_path(File.dirname(__FILE__))
 end
