@@ -1,8 +1,7 @@
 # sugoi-iko-yo-log-fetcher-ruby
-
-## Amazon S3に保管されているログデータをダウンロードする
+* Amazon S3に保管されているログデータをダウンロードする
 * https://github.com/actindi-dev/sugoi-iko-yo-log-fetcher のmruby実装です
-* mruby-cliで作成しているので認証情報を置いている上でワンバイナリで使えます
+* mruby-cliで作成しているので認証情報を置いている上でワンバイナリで使える
 
 ## Installation
 TODO
